@@ -9,5 +9,8 @@ variable "snapshot_url" {
 variable "project_id" {
   type        = string
   description = "The ID of the project in which the resource belongs. If it is not provided, the provider project is used."
-
+}
+variable "cmek" {
+  type        = string
+  description = "The self link of the KMS to be used"
 }
